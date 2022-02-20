@@ -3,5 +3,10 @@
     <string name="deskripsi">ini adalah logo todo</string>
     <string name="welcome">Welcome in Todo App</string>
     <string name="hintname">Masukan Nama</string>
-    <string name="pass">Masukan Password</string>
+    <string name="hintpass">Masukan Password</string>
+    <string name="signin">sign in</string>
+    <string name="sigunup1">New to Todo App</string>
+    <string name="sigunup2">Sign Up</string>
+    <string name="password">Password</string>
+
 </resources>
