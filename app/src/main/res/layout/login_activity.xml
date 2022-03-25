@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
-    tools:context=".MainActivity"
+    tools:context=".Login"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="10dp">
 
@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.083"
+        app:layout_constraintVertical_bias="0.051"
         app:srcCompat="@drawable/logo_todoo" />
 
     <TextView
@@ -42,9 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="16dp"
-        android:text="Name"
+        android:text="@string/tfnama"
         android:textColor="#F3F3F3"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,16 +52,19 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/etName"
         android:layout_width="280dp"
         android:layout_height="49dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/costume_edittext"
         android:ems="10"
         android:hint="@string/hintname"
-        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="10dp"
+
         android:minHeight="48dp"
         android:padding="10dp"
+        android:scrollbars="vertical"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -82,7 +85,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/etName"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
@@ -93,7 +96,8 @@
         android:background="@drawable/costume_edittext"
         android:ems="10"
         android:hint="@string/pass"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
+        android:autofillHints="Masukan Password"
         android:minHeight="48dp"
         android:padding="10dp"
         android:textColor="@color/white"
@@ -101,7 +105,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
 
     <Button
         android:id="@+id/bt_signin"
@@ -120,6 +124,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
+        android:clickable="true"
         android:textColor="#0099FF"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -135,13 +140,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New to Todo App? "
-        android:textColor="#FFFFFF"
+        android:textColor="@color/biru"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_signin"
         app:layout_constraintVertical_bias="0.243" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
